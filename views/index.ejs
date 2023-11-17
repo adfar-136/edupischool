@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>EdTech Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>My Website</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/fsd">Full Stack Development</a></li>
+            <li><a href="/datascience">Data Science</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <% if (user) { %>
+          <!-- Display user's profile image when logged in -->
+          <a href="/profile"
+            ><img
+              src="<%= user.profileImage || '/uploads/profile.png' %>"
+              class="profile-image"
+              alt="User Profile"
+          /></a>
+          <% } else { %>
+          <!-- Show login and signup buttons when not logged in -->
+          <a href="/login" class="login-button">Login</a>
+          <a href="/signup" class="signup-button">Sign Up</a>
+          <% } %>
+        </div>
+        
+      </div>
+    </header>
+
+    <section class="landing-section kashmir-needs-section section">
+      <div class="container">
+        <div class="card-container">
+          <div class="card left-card">
+            <h3 class="card-title top-heading">
+              Kashmir First Placement <br />
+              Driven Program: <br />Upskilling for the Future
+            </h3>
+            <h1 class="card-description">
+              A heading saying Kashmir's first placement-driven program.
+            </h1>
+            <button class="explore-button big-button">
+              Explore Our Programs <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="card right-card">
+            <div class="card-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 class="card-title">Job Placements</h3>
+            <h1 class="card-description">
+              Establishing partnerships with tech companies for job placements
+              and career growth. Our focus is on connecting our students with
+              leading industry players, providing them with valuable
+              opportunities to kickstart their careers.
+            </h1>
+            <form method="post" class="contact-form">
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Enter your Full Name"
+                class="form-input"
+              />
+              <input
+                type="tel"
+                id="phone"
+                name="phoneNumber"
+                placeholder="Enter your mobile number"
+                class="form-input"
+              />
+              <button type="submit" class="get-in-touch-button">
+                Get in Touch
+              </button>
+            
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offering-section section">
+      <div class="container-offering">
+        <div class="section-title">
+          <h2>What We Can Offer to Kashmir</h2>
+          <p class="card-description">
+            Investing in robust technology infrastructure to support innovation
+            and connectivity. We aim to build a state-of-the-art technological
+            environment that fosters creativity and accelerates progress.
+          </p>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="card-title">Quality Education</h3>
+          <p class="card-description">
+            Establishing partnerships with tech companies for job placements and
+            career growth. Our focus is on connecting our students with leading
+            industry players, providing them with valuable opportunities to
+            kickstart their careers.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3 class="card-title">Job Opportunities</h3>
+          <p class="card-description">
+            Our platform connects students with career opportunities to secure
+            their future in the workforce.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h3 class="card-title">Global Perspective</h3>
+          <p class="card-description">
+            We offer a global perspective through international partnerships and
+            exposure to diverse cultures.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="fsd-course-section section">
+      <div class="course-details">
+          <!-- Left Item -->
+          <div class="left-item">
+              <h3 class="course-heading">
+                  Full Stack <br> Web Development <br> Course <br />
+              </h3>
+              <p class="card-description">
+                  Dive into the world of Full Stack Web Development <br> with our
+                  carefully crafted curriculum.
+              </p>
+              <button class="download-button">Download Curriculum</button>
+          </div>
+          <!-- Right Item -->
+          <div class="right-item">
+              <div class="course-card">
+                  <i class="fas fa-code"></i>
+                  <h3 class="card-title">HTML & CSS Fundamentals</h3>
+                  <p class="card-description">
+                      Learn the basics of HTML and CSS to create stunning and
+                      responsive web pages.
+                  </p>
+              </div>
+              <div class="course-card">
+                  <i class="fas fa-cogs"></i>
+                  <h3 class="card-title">JavaScript Mastery</h3>
+                  <p class="card-description">
+                      Master JavaScript to add interactivity and dynamic features to
+                      your web applications.
+                  </p>
+              </div>
+              <div class="course-card">
+                  <i class="fab fa-react"></i>
+                  <h3 class="card-title">React.js for Front-End</h3>
+                  <p class="card-description">
+                      Explore React.js for building modern and efficient user
+                      interfaces.
+                  </p>
+              </div>
+              <div class="course-card">
+                  <i class="fab fa-node"></i>
+                  <h3 class="card-title">NodeJS, Express MongoDB</h3>
+                  <p class="card-description">
+                      Explore React.js for building modern and efficient user
+                      interfaces.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+  <section class="data-science-section section">
+      <div class="course-details">
+          <!-- left Item -->
+          <div class="right-item">
+              <div class="course-card">
+                  <i class="fas fa-chart-bar"></i>
+                  <h3 class="card-title">Data Analysis</h3>
+                  <p class="card-description">
+                      Learn the fundamentals of data analysis and visualization techniques.
+                  </p>
+              </div>
+              <div class="course-card">
+                  <i class="fas fa-robot"></i>
+                  <h3 class="card-title">Machine Learning</h3>
+                  <p class="card-description">
+                      Dive into the world of machine learning and its applications.
+                  </p>
+              </div>
+              <div class="course-card">
+                  <i class="fas fa-database"></i>
+                  <h3 class="card-title">Big Data Technologies</h3>
+                  <p class="card-description">
+                      Explore big data technologies for handling large-scale datasets.
+                  </p>
+              </div>
+              <div class="course-card">
+                  <i class="fas fa-project-diagram"></i>
+                  <h3 class="card-title">Data Science Projects</h3>
+                  <p class="card-description">
+                      Work on real-world data science projects to apply your skills.
+                  </p>
+              </div>
+          </div>
+          <!-- right Item -->
+          <div class="left-item">
+              <h3 class="course-heading">
+                  Data Science <br> Specialization <br> Program <br />
+              </h3>
+              <p class="card-description">
+                  Explore the field of Data Science <br> with our specialized program.
+              </p>
+              <button class="download-button">Download Curriculum</button>
+          </div>
+      </div>
+  </section>
+  <section class="section">
+    <h1 class="road-heading">Our approach</h1>
+    <div class="timeline-pages">
+      <ul class="timeline-list">
+        <li class="timeline-list-item" style="--accent-color:#41516C">
+            <div class="date">Resume Building</div>
+            <div class="title">Title 1</div>
+            <div class="descr">Lorem ipsum, dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure eius molestias qui, consequuntur lorem 20
+               laborum blanditiis harum quidem reiciendis repellendus quasi dolorem mollitia labore autem ullam, incidunt sequi. Doloremque, delectus dignissimos? amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
+        </li>
+        <li class="timeline-list-item" style="--accent-color:#FBCA3E">
+          <div class="date">Mock Interviews</div>
+          <div class="title">Title 1</div>
+          <div class="descr">Lorem ipsum, dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure eius molestias qui, consequuntur lorem 20
+            laborum blanditiis harum quidem reiciendis repellendus quasi dolorem mollitia labore autem ullam, incidunt sequi. Doloremque, delectus dignissimos? amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
+      </li>
+      </ul>
+      <ul class="timeline-list">
+        <li class="timeline-list-item" style="--accent-color:#E24A68">
+            <div class="date">One on One</div>
+            <div class="title">Title 1</div>
+            <div class="descr">Lorem ipsum, dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure eius molestias qui, consequuntur lorem 20
+              laborum blanditiis harum quidem reiciendis repellendus quasi dolorem mollitia labore autem ullam, incidunt sequi. Doloremque, delectus dignissimos? amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
+        </li>
+        <li class="timeline-list-item" style="--accent-color:#1B5F8C">
+          <div class="date">Hello tul palow</div>
+          <div class="title">Title 1</div>
+          <div class="descr">Lorem ipsum, dolor sit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure eius molestias qui, consequuntur lorem 20
+            laborum blanditiis harum quidem reiciendis repellendus quasi dolorem mollitia labore autem ullam, incidunt sequi. Doloremque, delectus dignissimos? amet consectetur adipisicing elit. Quas itaque hic quibusdam fugiat est numquam harum, accusamus suscipit consequatur laboriosam!</div>
+      </li>
+      </ul>
+    </div> 
+  </section>
+  <footer class="footer">
+    <div class="footer__addr">
+      <h1 class="footer__logo">Something</h1>
+          
+      <h2>Contact</h2>
+      
+      <address>
+        5534 Somewhere In. The World 22193-10212<br>
+            
+        <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+      </address>
+    </div>
+    
+    <ul class="footer__nav">
+      <li class="nav__item">
+        <h2 class="nav__title">Media</h2>
+  
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Online</a>
+          </li>
+  
+          <li>
+            <a href="#">Print</a>
+          </li>
+              
+          <li>
+            <a href="#">Alternative Ads</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav__title">Technology</h2>
+        
+        <ul class="nav__ul nav__ul--extra">
+          <li>
+            <a href="#">Hardware Design</a>
+          </li>
+          
+          <li>
+            <a href="#">Software Design</a>
+          </li>
+          
+          <li>
+            <a href="#">Digital Signage</a>
+          </li>
+          
+          <li>
+            <a href="#">Automation</a>
+          </li>
+          
+          <li>
+            <a href="#">Artificial Intelligence</a>
+          </li>
+          
+          <li>
+            <a href="#">IoT</a>
+          </li>
+        </ul>
+      </li>
+      
+      <li class="nav__item">
+        <h2 class="nav__title">Legal</h2>
+        
+        <ul class="nav__ul">
+          <li>
+            <a href="#">Privacy Policy</a>
+          </li>
+          
+          <li>
+            <a href="#">Terms of Use</a>
+          </li>
+          
+          <li>
+            <a href="#">Sitemap</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    
+    <div class="legal">
+      <p>&copy; 2019 Something. All rights reserved.</p>
+    </div>
+  </footer>
+
+      <script
+      src="https://kit.fontawesome.com/68129f478c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

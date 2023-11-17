@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/datascience.css" />
+    <title>Data Science and ML Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>My Website</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dsml">Data Science and ML</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <% if (user) { %>
+          <!-- Display user's profile image when logged in -->
+          <a href="/profile"
+            ><img
+              src="<%= user.profileImage || '/uploads/profile.png' %>"
+              class="profile-image"
+              alt="User Profile"
+          /></a>
+          <% } else { %>
+          <!-- Show login and signup buttons when not logged in -->
+          <a href="/login" class="login-button">Login</a>
+          <a href="/signup" class="signup-button">Sign Up</a>
+          <% } %>
+        </div>
+      </div>
+    </header>
+    <section class="dsml-landing section">
+      <div class="top-section">
+        <div class="left-description">
+          <p class="dsml-title">
+            Master Data Science and Machine Learning with Kashmir's first
+            placement program.
+          </p>
+          <h1 class="dsml-heading">
+            Kashmir First Placement <br />
+            Data Science and ML Program
+          </h1>
+          <div class="dsml-rating">
+            <div class="dsml-circle"></div>
+            <div class="dsml-circle"></div>
+            <div class="dsml-circle"></div>
+            <div class="dsml-circle"></div>
+            <div class="dsml-circle"></div>
+            <div class="dsml-stars">
+              ⭐⭐⭐⭐⭐ 4.5 <br />
+              from 10+ ratings
+            </div>
+          </div>
+          <button class="apply-now">Apply Now</button>
+        </div>
+        <div class="right-description">
+          <div class="right-card-description">
+            <h3>Book Your Free Masterclass Now</h3>
+            <p>
+              Establishing partnerships with tech companies for job placements.
+            </p>
+          </div>
+          <form method="post" class="contact-form">
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your Full Name"
+              class="form-input"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your Email"
+              class="form-input"
+            />
+            <input
+              type="tel"
+              id="phone"
+              name="phoneNumber"
+              placeholder="Enter your mobile number"
+              class="form-input"
+            />
+            <p>
+              By clicking Sign Up, you agree to our
+              <a href="">Terms & Conditions</a>
+            </p>
+            <button type="submit" class="get-in-touch-button">
+              Get in Touch
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="dsml-feature">
+          <p class="feture-title">Program Duration</p>
+          <h3>12 Months</h3>
+        </div>
+        <div class="dsml-feature">
+          <p class="feture-title">Skill Levels</p>
+          <h3>Beginner to Advanced</h3>
+        </div>
+        <div class="dsml-feature">
+          <p class="feture-title">Hands-on Projects</p>
+          <h3>Real-world Applications</h3>
+        </div>
+        <div class="dsml-feature">
+          <p class="feture-title">Industry Mentorship</p>
+          <h3>Guidance from Experts</h3>
+        </div>
+      </div>
+    </section>
+    <section class="dsml-outcomes section">
+      <div class="frontend-outcomes">
+        <h2>Data Science Skills</h2>
+        <ul>
+          <li><i class="fas fa-chart-bar"></i> Statistical Analysis</li>
+          <li><i class="fas fa-database"></i> Database Management</li>
+          <li><i class="fas fa-chart-pie"></i> Data Visualization</li>
+          <li><i class="fas fa-cogs"></i> Machine Learning Algorithms</li>
+          <li>
+            <i class="fas fa-code"></i> Programming in Python and R
+          </li>
+          <li>
+            <i class="fas fa-laptop-code"></i> Big Data Processing
+          </li>
+          <li>
+            <i class="fas fa-comments"></i> Effective Communication of Data Insights
+          </li>
+          <li>
+            <i class="fas fa-chart-line"></i> Predictive Modeling
+          </li>
+          <li>
+            <i class="fas fa-paint-brush"></i> Data Preprocessing and Cleaning
+          </li>
+          <li>
+            <i class="fas fa-code"></i> Version control with Git and GitHub
+          </li>
+          <li>
+            <i class="fas fa-desktop"></i> Cloud Computing for Data Science
+          </li>
+        </ul>
+      </div>
+      <div class="backend-outcomes">
+        <h2>Machine Learning Skills</h2>
+        <ul>
+          <li>
+            <i class="fas fa-robot"></i> Supervised and Unsupervised Learning
+          </li>
+          <li>
+            <i class="fas fa-brain"></i> Neural Network and Deep Learning
+          </li>
+          <li>
+            <i class="fas fa-code"></i> Feature Engineering and Selection
+          </li>
+          <li><i class="fas fa-cogs"></i> Model Evaluation and Deployment</li>
+          <li>
+            <i class="fas fa-network-wired"></i> Building Recommendation Systems
+          </li>
+          <li>
+            <i class="fas fa-lock"></i> Ethics in Machine Learning
+          </li>
+          <li>
+            <i class="fas fa-terminal"></i> Natural Language Processing
+          </li>
+          <li>
+            <i class="fas fa-database"></i> Handling Imbalanced Data
+          </li>
+          <li>
+            <i class="fas fa-code-branch"></i> Collaborative Filtering
+          </li>
+          <li>
+            <i class="fas fa-terminal"></i> Time Series Analysis
+          </li>
+          <li>
+            <i class="fas fa-bug"></i> Debugging and troubleshooting in ML
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="dsml-info section">
+      <div class="top-info">
+        <div class="info-card">
+          <h2>Why Choose DSML?</h2>
+          <p>
+            At DSML, we offer a dynamic Data Science and Machine Learning course with a
+            focus on practical skills. Learn from industry experts and gain
+            hands-on experience in the latest technologies.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Career Opportunities</h2>
+          <p>
+            Unlock diverse career opportunities, including roles such as Data Scientist,
+            Machine Learning Engineer, and AI Specialist. Our alumni
+            have successfully ventured into leading tech companies.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Top Instructors</h2>
+          <p>
+            Learn from the best! Our instructors bring expertise from renowned
+            companies like Google and Amazon. Benefit from their insights,
+            industry knowledge, and practical experience.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Project-Based Learning</h2>
+          <p>
+            Our curriculum emphasizes project-based learning, allowing you to
+            apply theoretical knowledge to real-world scenarios. Build a strong
+            portfolio to showcase your skills to potential employers.
+          </p>
+        </div>
+      </div>
+      <div class="bottom-info">
+        <div class="info-card">
+          <h2>Industry-Relevant Skills</h2>
+          <p>
+            Gain hands-on experience in the latest tools and technologies used
+            in the data science and machine learning industry. Our program covers essential skills such as version
+            control, agile development, and collaboration tools.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Supportive Community</h2>
+          <p>
+            Join a vibrant community of learners. Collaborate with peers,
+            participate in hackathons, and engage in networking events. Our
+            community is here to support your learning journey.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Flexible Learning</h2>
+          <p>
+            Our flexible learning environment allows you to balance your studies
+            with other commitments. Access course materials 24/7, attend live
+            sessions, and progress at your own pace.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Job Placement Assistance</h2>
+          <p>
+            We provide dedicated job placement assistance to help you secure
+            employment post-completion. Benefit from resume reviews, mock
+            interviews, and connections with hiring partners.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h1 class="road-heading">Data Science and Machine Learning Journey</h1>
+      <div class="timeline-pages">
+        <ul class="timeline-list">
+          <li class="timeline-list-item" style="--accent-color: #41516c">
+            <div class="date">Statistics</div>
+            <div class="title">Foundations of Data Science</div>
+            <div class="descr">
+              <ul>
+                <li>Understanding Statistical Concepts</li>
+                <li>Probability and Distributions</li>
+                <li>Hypothesis Testing</li>
+                <li>Regression Analysis</li>
+                <li>Statistical Inference</li>
+                <li>Experimental Design</li>
+                <li>Introduction to Bayesian Statistics</li>
+                <li>Applications in Data Science</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-list-item" style="--accent-color: #fbca3e">
+            <div class="date">Machine Learning Basics</div>
+            <div class="title">Introduction to ML Fundamentals</div>
+            <div class="descr">
+              <ul>
+                <li>Overview of Machine Learning</li>
+                <li>Supervised and Unsupervised Learning</li>
+                <li>Feature Engineering and Selection</li>
+                <li>Model Evaluation and Deployment</li>
+                <li>Building Recommendation Systems</li>
+                <li>Ethics in Machine Learning</li>
+                <li>Natural Language Processing</li>
+                <li>Handling Imbalanced Data</li>
+                <li>Collaborative Filtering</li>
+                <li>Time Series Analysis</li>
+                <li>Debugging and Troubleshooting in ML</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="timeline-list">
+          <li class="timeline-list-item" style="--accent-color: #e24a68">
+            <div class="date">Data Preprocessing</div>
+            <div class="title">Preparing Data for Analysis</div>
+            <div class="descr">
+              <ul>
+                <li>Introduction to Data Preprocessing</li>
+                <li>Data Cleaning Techniques</li>
+                <li>Handling Missing Data</li>
+                <li>Dealing with Outliers</li>
+                <li>Normalization and Standardization</li>
+                <li>Exploratory Data Analysis (EDA)</li>
+                <li>Feature Scaling</li>
+                <li>Dimensionality Reduction</li>
+                <li>Data Integration and Transformation</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-list-item" style="--accent-color: #1b5f8c">
+            <div class="date">Advanced ML Techniques</div>
+            <div class="title">Exploring Advanced ML Concepts</div>
+            <div class="descr">
+              <ul>
+                <li>Ensemble Learning</li>
+                <li>Deep Learning and Neural Networks</li>
+                <li>Reinforcement Learning</li>
+                <li>Transfer Learning</li>
+                <li>Clustering Algorithms</li>
+                <li>Dimensionality Reduction Techniques</li>
+                <li>Advanced Model Evaluation</li>
+                <li>Hyperparameter Tuning</li>
+                <li>Interpretable ML Models</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="timeline-list">
+          <li class="timeline-list-item" style="--accent-color: #77b6ea">
+            <div class="date">Data Science Backend</div>
+            <div class="title">Backend for Data Science Applications</div>
+            <div class="descr">
+              <ul>
+                <li>Introduction to Data Science Backend</li>
+                <li>Data Processing with Python</li>
+                <li>Building RESTful APIs for Data Science</li>
+                <li>Connecting to Databases</li>
+                <li>Authentication and Security in Data Science</li>
+                <li>Event Streaming and Processing</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-list-item" style="--accent-color: #fbca3e">
+            <div class="date">Machine Learning Deployment</div>
+            <div class="title">Deploying ML Models in Production</div>
+            <div class="descr">
+              <ul>
+                <li>Model Deployment Strategies</li>
+                <li>Containerization with Docker</li>
+                <li>Orchestration with Kubernetes</li>
+                <li>Scalability and Performance Optimization</li>
+                <li>Monitoring and Maintenance</li>
+                <li>Continuous Integration/Continuous Deployment (CI/CD)</li>
+                <li>Managing Model Versions</li>
+                <li>Security Considerations</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="timeline-list">
+          <li class="timeline-list-item" style="--accent-color: #e24a68">
+            <div class="date">Big Data for DSML</div>
+            <div class="title">Handling Big Data in DSML</div>
+            <div class="descr">
+              <ul>
+                <li>Introduction to Big Data Technologies</li>
+                <li>Big Data Storage and Processing</li>
+                <li>Distributed Computing with Apache Spark</li>
+                <li>Real-time Big Data Analytics</li>
+                <li>Data Lakes and Data Warehousing</li>
+                <li>Scalable Data Pipelines</li>
+                <li>Handling Streaming Data</li>
+                <li>Big Data Security and Compliance</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-list-item" style="--accent-color: #1b5f8c">
+            <div class="date">AI and Ethics</div>
+            <div class="title">AI Development and Ethical Considerations</div>
+            <div class="descr">
+              <ul>
+                <li>Introduction to Artificial Intelligence</li>
+                <li>Ethical Principles in AI</li>
+                <li>Fairness and Bias in ML Models</li>
+                <li>Interpretable and Explainable AI</li>
+                <li>AI Regulations and Compliance</li>
+                <li>Privacy and Security in AI</li>
+                <li>Societal Impacts of AI</li>
+                <li>Responsible AI Development</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Something</h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          5534 Somewhere In. The World 22193-10212<br />
+
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Online</a>
+            </li>
+
+            <li>
+              <a href="#">Print</a>
+            </li>
+
+            <li>
+              <a href="#">Alternative Ads</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Technology</h2>
+
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Hardware Design</a>
+            </li>
+
+            <li>
+              <a href="#">Software Design</a>
+            </li>
+
+            <li>
+              <a href="#">Digital Signage</a>
+            </li>
+
+            <li>
+              <a href="#">Automation</a>
+            </li>
+
+            <li>
+              <a href="#">Artificial Intelligence</a>
+            </li>
+
+            <li>
+              <a href="#">IoT</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2019 Something. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/68129f478c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="/js/about.js"></script> -->
+  </body>
+</html>

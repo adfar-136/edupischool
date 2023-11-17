@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/fsd.css" />
+    <title>EdTech Landing Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>My Website</h1>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/fsd">Full Stack Development</a></li>
+            <li><a href="/datascience">Data Science</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <% if (user) { %>
+          <!-- Display user's profile image when logged in -->
+          <a href="/profile"
+            ><img
+              src="<%= user.profileImage || '/uploads/profile.png' %>"
+              class="profile-image"
+              alt="User Profile"
+          /></a>
+          <% } else { %>
+          <!-- Show login and signup buttons when not logged in -->
+          <a href="/login" class="login-button">Login</a>
+          <a href="/signup" class="signup-button">Sign Up</a>
+          <% } %>
+        </div>
+      </div>
+    </header>
+    <section class="fsd-landing section">
+      <div class="top-section">
+        <div class="left-description">
+          <p class="fsd-title">
+            Master Frontend and Backend Development with Kashmir's first
+            placement program.
+          </p>
+          <h1 class="fsd-heading">
+            Kashmir First Placement <br />
+            Full Stack Web <br />Development Program
+          </h1>
+          <div class="fsd-rating">
+            <div class="fsd-circle"></div>
+            <div class="fsd-circle"></div>
+            <div class="fsd-circle"></div>
+            <div class="fsd-circle"></div>
+            <div class="fsd-circle"></div>
+            <div class="fsd-stars">
+              ⭐⭐⭐⭐⭐ 4.5 <br />
+              from 10+ rathing
+            </div>
+          </div>
+          <button class="apply-now">Apply Now</button>
+        </div>
+        <div class="right-description">
+          <div class="right-card-description">
+            <h3>Book Your Free Masterclass Now</h3>
+            <p>
+              Establishing partnerships with tech companies for job placements.
+            </p>
+          </div>
+          <form method="post" class="contact-form">
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your Full Name"
+              class="form-input"
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your Email"
+              class="form-input"
+            />
+            <input
+              type="tel"
+              id="phone"
+              name="phoneNumber"
+              placeholder="Enter your mobile number"
+              class="form-input"
+            />
+            <p>
+              By clicking Sign Up, you agree to our
+              <a href="">Terms & Conditions</a>
+            </p>
+            <button type="submit" class="get-in-touch-button">
+              Get in Touch
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="bottom-section">
+        <div class="fsd-feature">
+          <p class="feture-title">Course Duration</p>
+          <h3>8 Months</h3>
+        </div>
+        <div class="fsd-feature">
+          <p class="feture-title">Course Duration</p>
+          <h3>8 Months</h3>
+        </div>
+        <div class="fsd-feature">
+          <p class="feture-title">Course Duration</p>
+          <h3>8 Months</h3>
+        </div>
+        <div class="fsd-feature">
+          <p class="feture-title">Course Duration</p>
+          <h3>8 Months</h3>
+        </div>
+      </div>
+    </section>
+    <section class="course-outcomes section">
+      <div class="frontend-outcomes">
+        <h2>Front-End Outcomes</h2>
+        <ul>
+          <li><i class="fab fa-html5"></i> Strong foundation in HTML</li>
+          <li><i class="fab fa-css3"></i> Proficiency in CSS styling</li>
+          <li><i class="fab fa-js"></i> Mastery of JavaScript fundamentals</li>
+          <li><i class="fab fa-react"></i> Building dynamic UIs with React</li>
+          <li>
+            <i class="fas fa-cogs"></i> Understanding of how JavaScript and CSS
+            interact
+          </li>
+          <li>
+            <i class="fas fa-laptop-code"></i> Responsive web design principles
+          </li>
+          <li>
+            <i class="fas fa-comments"></i> Effective collaboration using
+            JavaScript and React
+          </li>
+          <li>
+            <i class="fas fa-chart-line"></i> Performance optimization for web
+            applications
+          </li>
+          <li>
+            <i class="fas fa-paint-brush"></i> Styling and theming with CSS
+            preprocessors
+          </li>
+          <li>
+            <i class="fas fa-code"></i> Version control with Git and GitHub
+          </li>
+          <li>
+            <i class="fas fa-desktop"></i> Cross-browser compatibility testing
+          </li>
+        </ul>
+      </div>
+      <div class="backend-outcomes">
+        <h2>Back-End Outcomes</h2>
+        <ul>
+          <li>
+            <i class="fas fa-server"></i> Server-side scripting proficiency
+          </li>
+          <li>
+            <i class="fas fa-database"></i> Database design and management
+            skills
+          </li>
+          <li>
+            <i class="fas fa-code"></i> Server-side programming languages
+            expertise (e.g., Node.js, Python, Ruby)
+          </li>
+          <li><i class="fas fa-network-wired"></i> RESTful API development</li>
+          <li>
+            <i class="fas fa-lock"></i> Security best practices for back-end
+            development
+          </li>
+          <li>
+            <i class="fas fa-terminal"></i> Command-line interface proficiency
+          </li>
+          <li>
+            <i class="fas fa-database"></i> Data modeling and schema design
+          </li>
+          <li>
+            <i class="fas fa-code-branch"></i> Version control for back-end code
+          </li>
+          <li>
+            <i class="fas fa-terminal"></i> Deployment and server management
+          </li>
+          <li>
+            <i class="fas fa-cogs"></i> Integration with front-end technologies
+          </li>
+          <li>
+            <i class="fas fa-bug"></i> Debugging and troubleshooting skills
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="fsd-info section">
+      <div class="top-info">
+        <div class="info-card">
+          <h2>Why Choose FSD?</h2>
+          <p>
+            At FSD, we offer a dynamic Full Stack Development course with a
+            focus on practical skills. Learn from industry experts and gain
+            hands-on experience in the latest technologies.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Career Opportunities</h2>
+          <p>
+            Unlock diverse career opportunities, including roles such as Full
+            Stack Developer, Web Developer, and Software Engineer. Our alumni
+            have successfully ventured into leading tech companies.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Top Instructors</h2>
+          <p>
+            Learn from the best! Our instructors bring expertise from renowned
+            companies like Google and Amazon. Benefit from their insights,
+            industry knowledge, and practical experience.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Project-Based Learning</h2>
+          <p>
+            Our curriculum emphasizes project-based learning, allowing you to
+            apply theoretical knowledge to real-world scenarios. Build a strong
+            portfolio to showcase your skills to potential employers.
+          </p>
+        </div>
+      </div>
+      <div class="bottom-info">
+        <div class="info-card">
+          <h2>Industry-Relevant Skills</h2>
+          <p>
+            Gain hands-on experience in the latest tools and technologies used
+            in the industry. Our program covers essential skills such as version
+            control, agile development, and collaboration tools.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Supportive Community</h2>
+          <p>
+            Join a vibrant community of learners. Collaborate with peers,
+            participate in hackathons, and engage in networking events. Our
+            community is here to support your learning journey.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Flexible Learning</h2>
+          <p>
+            Our flexible learning environment allows you to balance your studies
+            with other commitments. Access course materials 24/7, attend live
+            sessions, and progress at your own pace.
+          </p>
+        </div>
+        <div class="info-card">
+          <h2>Job Placement Assistance</h2>
+          <p>
+            We provide dedicated job placement assistance to help you secure
+            employment post-completion. Benefit from resume reviews, mock
+            interviews, and connections with hiring partners.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h1 class="road-heading">FSD Journey</h1>
+      <div class="timeline-pages">
+        <ul class="timeline-list">
+          <li class="timeline-list-item" style="--accent-color: #41516c">
+            <div class="date">HTML</div>
+            <div class="title">Getting Started with HTML</div>
+            <div class="descr">
+              <ul>
+                <li>Understanding HTML Basics</li>
+                <li>Document Structure and Tags</li>
+                <li>Text Formatting and Hyperlinks</li>
+                <li>Images and Multimedia Integration</li>
+                <li>List and Table Structures</li>
+                <li>Forms for User Input</li>
+                <li>Introduction to HTML5 Elements</li>
+                <li>Creating Responsive Designs</li>
+                <li>Effective Linking and Navigation</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-list-item" style="--accent-color: #fbca3e">
+            <div class="date">CSS</div>
+            <div class="title">Getting Started with Styling</div>
+            <div class="descr">
+              <ul>
+                <li>Understanding CSS Fundamentals</li>
+                <li>Selectors and Styling Elements</li>
+                <li>Box Model and Layout</li>
+                <li>CSS Flexbox and Grid</li>
+                <li>Responsive Design with Media Queries</li>
+                <li>Transitions and Animations</li>
+                <li>Working with Fonts and Colors</li>
+                <li>CSS Variables and Custom Properties</li>
+                <li>Best Practices for Maintainable Stylesheets</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="timeline-list">
+          <li class="timeline-list-item" style="--accent-color: #e24a68">
+            <div class="date">JavaScript</div>
+            <div class="title">Getting Started with Dynamism</div>
+            <div class="descr">
+              <ul>
+                <li>JavaScript Fundamentals and Syntax</li>
+                <li>Variables, Data Types, and Operators</li>
+                <li>Control Flow and Looping</li>
+                <li>Functions and Scope</li>
+                <li>Working with Arrays and Objects</li>
+                <li>DOM Manipulation and Event Handling</li>
+                <li>Asynchronous JavaScript and Promises</li>
+                <li>AJAX and Fetch API</li>
+                <li>Introduction to ES6+ Features</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-list-item" style="--accent-color: #1b5f8c">
+            <div class="date">React</div>
+            <div class="title">Building Powerful Web Experiences</div>
+            <div class="descr">
+              <ul>
+                <li>Introduction to React and JSX</li>
+                <li>Components and Props</li>
+                <li>State and Lifecycle</li>
+                <li>Handling Events and Forms</li>
+                <li>Conditional Rendering</li>
+                <li>List and Keys</li>
+                <li>React Hooks</li>
+                <li>Routing in React</li>
+                <li>State Management with Redux</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="timeline-list">
+          <li class="timeline-list-item" style="--accent-color: #77b6ea">
+            <div class="date">Node.js</div>
+            <div class="title">Backend Brilliance</div>
+            <div class="descr">
+              <ul>
+                <li>Node.js Fundamentals</li>
+                <li>CommonJS Modules and ES6 Modules</li>
+                <li>npm and Package Management</li>
+                <li>Asynchronous Programming in Node.js</li>
+                <li>File System Operations</li>
+                <li>Building RESTful APIs</li>
+                <li>Connecting to Databases</li>
+                <li>Authentication and Security in Node.js</li>
+                <li>Event Emitters and Streams</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-list-item" style="--accent-color: #fbca3e">
+            <div class="date">Express JS + MongoDB</div>
+            <div class="title">Database Dynamo for Backend Excellence</div>
+            <div class="descr">
+              <ul>
+                <li>Express.js Introduction and Setup</li>
+                <li>Routing in Express.js</li>
+                <li>Middleware and Request Handling</li>
+                <li>Working with npm and Package Management in Express.js</li>
+                <li>Asynchronous Programming in Node.js and Express.js</li>
+                <li>Connecting to MongoDB with Mongoose</li>
+                <li>Building RESTful APIs with Express.js and MongoDB</li>
+                <li>Authentication and Authorization in Express.js</li>
+                <li>Securing Express.js Applications</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <ul class="timeline-list">
+          <li class="timeline-list-item" style="--accent-color: #e24a68">
+            <div class="date">DSA</div>
+            <div class="title">
+              Coding Prowess with Data Structures and Algorithms
+            </div>
+            <div class="descr">
+              <ul>
+                <li>Introduction to Data Structures</li>
+                <li>Arrays and Lists</li>
+                <li>Stacks and Queues</li>
+                <li>Basic Sorting Algorithms</li>
+                <li>Searching Techniques</li>
+                <li>Introduction to Trees</li>
+                <li>Graph Fundamentals</li>
+                <li>Basic Dynamic Programming</li>
+                <li>Hashing and Hash Tables</li>
+              </ul>
+            </div>
+          </li>
+          <li class="timeline-list-item" style="--accent-color: #1b5f8c">
+            <div class="date">Interview Prep</div>
+            <div class="title">
+              Mastering Technical and Behavioral Interviews
+            </div>
+            <div class="descr">
+              <ul>
+                <li>Technical Interview Overview</li>
+                <li>Common Data Structures Questions</li>
+                <li>Basic Algorithms and Problem Solving</li>
+                <li>Introduction to System Design</li>
+                <li>Behavioral Interview Preparation</li>
+                <li>Soft Skills for Interviews</li>
+                <li>Mock Interview Practice</li>
+                <li>Feedback and Improvement Strategies</li>
+                <li>Building Confidence and Communication</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Something</h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          5534 Somewhere In. The World 22193-10212<br />
+
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Online</a>
+            </li>
+
+            <li>
+              <a href="#">Print</a>
+            </li>
+
+            <li>
+              <a href="#">Alternative Ads</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Technology</h2>
+
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Hardware Design</a>
+            </li>
+
+            <li>
+              <a href="#">Software Design</a>
+            </li>
+
+            <li>
+              <a href="#">Digital Signage</a>
+            </li>
+
+            <li>
+              <a href="#">Automation</a>
+            </li>
+
+            <li>
+              <a href="#">Artificial Intelligence</a>
+            </li>
+
+            <li>
+              <a href="#">IoT</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2019 Something. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/68129f478c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="/js/about.js"></script> -->
+  </body>
+</html>
