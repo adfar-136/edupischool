@@ -189,6 +189,16 @@ app.post("/",async (req, res) => {
   const newUser = await Register.create({ fullName, phoneNumber});
   res.status(201).redirect("/about");
 });
+app.post("/fsd",async (req, res) => {
+  const { fullName,email, phoneNumber} = req.body;
+  const newUser = await Register.create({ fullName,email,phoneNumber});
+  res.status(201).redirect("/");
+});
+app.post("/datascience",async (req, res) => {
+  const { fullName,email, phoneNumber} = req.body;
+  const newUser = await Register.create({ fullName,email,phoneNumber});
+  res.status(201).redirect("/");
+});
 app.get("/logout", (req, res) => {
   req.logout(() => {});
   res.redirect("/");

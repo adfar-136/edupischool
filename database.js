@@ -33,7 +33,7 @@ mongoose.connect(
   });
   const registerSchema = new mongoose.Schema({
     fullName: String,
-    
+    email:String,
     phoneNumber: Number,
     
   });

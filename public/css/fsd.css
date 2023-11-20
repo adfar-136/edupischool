@@ -112,8 +112,8 @@ nav a:hover {
   position: fixed;
   top: 20px;
   right: 20px;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   border: 2px solid #fff; /* Added border to the profile image */
 }
